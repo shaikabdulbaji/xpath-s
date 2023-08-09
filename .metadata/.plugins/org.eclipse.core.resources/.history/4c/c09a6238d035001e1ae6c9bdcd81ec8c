@@ -1,0 +1,8 @@
+package Relative_Xpath;
+
+public class a1Introduction {
+	
+	
+	// Unlike Absolute XPath, Relative XPath tries to locate the element directly instead of locating from root.
+
+}

@@ -1,0 +1,13 @@
+package Absolute_Xpath;
+
+public class b13All_p_tags_having_id_as_para1_and_class_as_main {
+	
+	
+	/*
+	 * http://compendiumdev.co.uk/selenium/basic_web_page.html
+	 * 
+	 *    All p tags having id as 'para1' and class as 'main' - /html/body/p[@id='para1'][@class='main']
+	 */
+
+
+}

@@ -1,0 +1,25 @@
+package a9All_Xpaths;
+
+public class sample {
+	
+	
+	/*
+	 * Demonstrate at http://omayo.blogspot.in/
+	
+	 * Finding an drop down field having class 'combobox' and also an hyper link having 
+	   value 'link2' - //select[@class='combobox'] | //a[@value='link2']
+	   
+	 * Finding hyper link having id='link1' and also the hyper link having value='link2'
+	   - //a[@id='link1' or @value='link2']
+	   
+	 * Finding 'button' tags having id 'but2'  - //button[@id='but2']
+	  
+	 * Finding any tags having id 'but2' - //*[@id='but2']
+	 
+	 * Finding 'button' tags having any attribute value as 'but2' - //button[@*='but2']
+	 
+	 * Finding 'button' tags having id attribute with any value - //button[@id]
+
+	 */
+
+}

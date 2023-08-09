@@ -1,0 +1,14 @@
+package Disadvantages_of_Absolute_Xpath;
+
+public class sample {
+	
+	/*
+	Disadvantages of using Absolute XPath
+
+	Generate Absolute XPath for 'Button2' button on the "www.omayo.blogspot.com"
+	Change the location of the button on the "www.omayo.blogspot.com"
+	Generate Absolute XPath again and compare the Absolute XPaths
+	*/
+
+
+}

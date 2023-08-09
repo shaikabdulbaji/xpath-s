@@ -1,0 +1,11 @@
+package Relative_Xpath;
+
+public class a1locates_the_complete_HTML_code {
+	
+	/*
+	 * http://compendiumdev.co.uk/selenium/basic_web_page.html
+	 * 
+	 *    / – locates the entire HTML document
+	 */
+
+}

@@ -1,0 +1,11 @@
+package Absolute_Xpath;
+
+public class a1locates_the_entire_HTML_document {
+	
+	/*
+	 * http://compendiumdev.co.uk/selenium/basic_web_page.html
+	 * 
+	 *    / – locates the entire HTML document
+	 */
+
+}

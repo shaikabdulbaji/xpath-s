@@ -1,0 +1,11 @@
+package Relative_Xpath;
+
+public class a3locates_the_body_portion_of_HTML_code_directly {
+	
+	/*
+	 * http://compendiumdev.co.uk/selenium/basic_web_page.html
+	 * 
+	 *    //body - locates the body portion of HTML code directly
+	 */
+
+}

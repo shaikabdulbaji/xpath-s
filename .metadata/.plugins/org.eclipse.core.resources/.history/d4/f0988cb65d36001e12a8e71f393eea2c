@@ -1,0 +1,12 @@
+package a9All_Xpaths;
+
+public class sample {
+	
+	
+	/*
+	 * Demonstrate at http://omayo.blogspot.in/
+	
+	 * Finding an image element using its attribute values - //img[@height="200px"]
+	 */
+
+}

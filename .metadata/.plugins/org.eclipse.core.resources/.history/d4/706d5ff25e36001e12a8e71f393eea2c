@@ -1,0 +1,32 @@
+package b10Finding_links;
+
+public class sample {
+	
+	
+	
+	/* 
+	 
+	 * XPath Expressions - Part 2 - Demonstrate at http://omayo.blogspot.in/
+	  
+	 
+	 * Find all the hyper links in the page - //a
+	 
+	 * Find all the hyper links having URL 'http://www.Selenium143.blogspot.com'
+	   - //a[@href='http://www.Selenium143.blogspot.com']
+	   
+	 * Find the first hyper link having URL 'http://www.Selenium143.blogspot.com'
+	   - (//a[@href='http://www.Selenium143.blogspot.com'])[1]
+	   
+	 * Find the third hyper link having URL 'http://www.Selenium143.blogspot.com' 
+	   - (//a[@href='http://www.Selenium143.blogspot.com'])[3]
+	   
+	 * Difference between (//a[@href='http://www.Selenium143.blogspot.com'])[3] and //a[@href='http://www.Selenium143.blogspot.com'][3]
+	 * Second XPath searches for the third element at tag level
+	 * First XPath searches for the third element at page level
+	 * Find first child of 'html' tag - //html/*[1]
+	 * Find second child of 'html' tag - //html/*[2]
+	 * Find first child of 'body' tag - //body/*[1]
+	 * Find second child of 'body' tag - //body/*[2]
+	 */
+
+}

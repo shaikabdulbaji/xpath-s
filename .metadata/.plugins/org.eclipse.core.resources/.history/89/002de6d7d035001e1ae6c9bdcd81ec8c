@@ -1,0 +1,11 @@
+package Relative_Xpath;
+
+public class a4locates_the_title_portion_of_head_section {
+	
+	/*
+	 * http://compendiumdev.co.uk/selenium/basic_web_page.html
+	 * 
+	 *    /html/head/title - locates the title portion of head section
+	 */
+
+}

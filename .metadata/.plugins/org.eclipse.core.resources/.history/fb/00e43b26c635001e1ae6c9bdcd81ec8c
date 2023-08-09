@@ -1,0 +1,9 @@
+package Absolute_Xpath;
+
+public class a5locates_the_body_portion_of_HTML_code {
+	
+	/*
+	 *    /html/head/title - locates the title portion of head section
+	 */
+
+}

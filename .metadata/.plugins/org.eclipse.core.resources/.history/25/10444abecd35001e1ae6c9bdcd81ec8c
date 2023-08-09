@@ -1,0 +1,11 @@
+package Absolute_Xpath;
+
+public class a7locates_the_first_p_tag {
+	
+	
+	/*
+	 *    /html/body/p - locates all the p tags in the body portion
+	 */
+
+
+}

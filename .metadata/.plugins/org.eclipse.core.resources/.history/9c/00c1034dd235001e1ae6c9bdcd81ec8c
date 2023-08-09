@@ -1,0 +1,16 @@
+package Relative_Xpath;
+
+public class b13All_p_tags_having_id_as_para1_and_class_as_main {
+	
+	
+	/*
+	 * Advantages of using Relative XPath
+
+		Generate Relative XPath for 'Button2' button on the www.omayo.blogspot.com
+		Change the location of the button on the www.omayo.blogspot.com
+		Generate Relative XPath again and compare the Relative XPaths
+		
+	 */
+
+
+}

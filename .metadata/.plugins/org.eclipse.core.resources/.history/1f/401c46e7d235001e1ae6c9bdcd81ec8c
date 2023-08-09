@@ -1,0 +1,13 @@
+package Relative_Xpath;
+
+public class b15 {
+	
+	
+	/*
+	 * http://compendiumdev.co.uk/selenium/basic_web_page.html
+	 * 
+	 *    //p[@id='para1'][@class='main'] - locates all the p tags having id as 'para1' and class as 'main'
+	 */
+
+
+}

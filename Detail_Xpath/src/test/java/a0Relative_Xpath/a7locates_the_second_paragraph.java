@@ -1,0 +1,13 @@
+package a0Relative_Xpath;
+
+public class a7locates_the_second_paragraph {
+	
+	
+	/*
+	 * http://compendiumdev.co.uk/selenium/basic_web_page.html
+	 * 
+	 *    //p[2] - locates the second paragraph
+	 */
+
+
+}
