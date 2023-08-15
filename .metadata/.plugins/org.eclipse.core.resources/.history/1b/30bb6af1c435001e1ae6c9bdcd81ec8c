@@ -1,9 +1,0 @@
-package Absolute_Xpath;
-
-public class a2locates_the_complete_HTML_code {
-	
-	/*
-	 *    / – locates the entire HTML document
-	 */
-
-}

@@ -1,9 +1,0 @@
-package Absolute_Xpath;
-
-public class a4locates_the_title_portion_of_head_section {
-	
-	/*
-	 *    /html/head/title - locates the title portion of head section
-	 */
-
-}

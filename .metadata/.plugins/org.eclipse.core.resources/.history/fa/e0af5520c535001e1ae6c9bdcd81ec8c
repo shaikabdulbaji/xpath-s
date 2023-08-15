@@ -1,9 +1,0 @@
-package Absolute_Xpath;
-
-public class a3locates_the_head_portion_of_HTML_code {
-	
-	/*
-	 *    /html - locates the complete HTML code
-	 */
-
-}
