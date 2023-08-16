@@ -1,0 +1,61 @@
+package bXPath_using_Attributes;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class aXPath_using_Attributes {
+	
+	public static WebDriver driver;
+	
+	public static void main(String[] args) {
+		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		chapter3();
+	}
+	
+	public static void highlight(WebElement element)
+	{
+		
+		JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
+		jsExecutor.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", element);  
+
+	}
+	
+	// XPath_using_Attributes
+	public static void chapter3()
+	{
+		driver.get("https://www.w3schools.com");
+		//driver.findElement(By.xpath("//a[text()='Log in']")).click();
+		
+		driver.findElement(By.xpath("//a[@title='Search W3Schools']")).click();
+		
+		/*
+		 * If we want any particular attribute locator and how many locators are there with that attribute.
+		 * we can find by like this :
+		  
+		 * If we want only "title" attribute locators do this : //a[@title]
+		 
+		 * If we want only "id" attribute locators do this : //a[@id]
+		 
+		 * If we want only "class" attribute locators do this : //a[@class]
+		 
+		 * If we want only "onclick" attribute locators do this : //a[@onclick]
+
+		 * If we want only "links" on web page : //a ["This is not correct way to find links, by giving
+		   //a it will matches the text also. To overcome this we go and find links under body of web page"]
+		 
+		 * If we want only "links" under the body of web page : //body//a
+
+		 * If we want only "links" under the body of web page : //body//a
+		 * 
+		 */
+	}
+
+}

@@ -1,0 +1,93 @@
+package cXPath_Operators;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+/*
+ * = Equal
+ * != Not Equal
+ * < Less Than
+ * <= Less than or equal to
+ * > Greater Than
+ * >= Greater than or equal to
+ */
+
+
+public class XPath_Operators {
+	
+public static WebDriver driver;
+	
+	public static void main(String[] args) {
+		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		chapter4();
+	}
+	
+	public static void highlight(WebElement element)
+	{
+		
+		JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
+		jsExecutor.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", element);  
+
+	}
+	
+	// XPath Operators 
+	public static void chapter4()
+	{
+		driver.get("https://www.hyrtutorials.com/p/add-padding-to-containers.html");
+		
+		/*
+		//Equal & Not Equal are apply only the attribute value are text.
+		
+		// = Equal
+		driver.findElement(By.xpath("//input[@type='text']"));   //--> It gives 5 elements
+		
+		// != Not Equal
+		driver.findElement(By.xpath("//input[@type!='text']"));	 //--> It gives 10 elements
+		
+		
+		//Equal & Not Equal are apply only the attribute value are text.
+		
+		// = Equal
+		driver.findElement(By.xpath("//input[@maxlength=10]")).sendKeys("Test");
+		
+		// != Not Equal
+		driver.findElement(By.xpath("//input[@maxlength!=10]")).sendKeys("Book");
+		
+		
+		//Less Than and Less than or equal to are used when the attribute value is number
+
+		// Less than or equal to
+		List<WebElement> elements = driver.findElements(By.xpath("//input[@maxlength<=15]"));
+		for(WebElement element : elements)
+		{
+			highlight(element);
+		}
+		
+		//Less Than
+		highlight(driver.findElement(By.xpath("//input[@maxlength<15]")));
+		
+		
+		//Greater Than and Greater than or equal to are used when the attribute value is number
+
+		//Greater than or equal to
+		List<WebElement> elements = driver.findElements(By.xpath("//input[@maxlength>=9]"));
+		for(WebElement element : elements)
+		{
+			highlight(element);
+		}
+		*/
+		//Greater Than
+		highlight(driver.findElement(By.xpath("//input[@maxlength<15]")));
+	}
+
+}

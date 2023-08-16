@@ -1,0 +1,48 @@
+package bXPath_using_Attributes;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class aXPath_using_Attributes {
+	
+	public static WebDriver driver;
+	
+	public static void main(String[] args) {
+		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		chapter3();
+	}
+	
+	public static void highlight(WebElement element)
+	{
+		
+		JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
+		jsExecutor.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", element);  
+
+	}
+	
+	// XPath_using_Attributes
+	public static void chapter3()
+	{
+		driver.get("https://www.w3schools.com");
+		//driver.findElement(By.xpath("//a[text()='Log in']")).click();
+		
+		driver.findElement(By.xpath("//a[@title='Search W3Schools']")).click();
+		
+		/*
+		 * If we want any particular attribute locator and how many locators are there with that attribute.
+		 * we can find by like this :
+		  
+		 * If we want only "title" attribute locators do this : //a[@title]
+		   
+		 */
+	}
+
+}

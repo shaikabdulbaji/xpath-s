@@ -1,0 +1,62 @@
+package dXpath_Conditions;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Xpath_Conditions {
+	
+public static WebDriver driver;
+	
+	public static void main(String[] args) {
+		
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		chapter4();
+	}
+	
+	public static void highlight(WebElement element)
+	{
+		
+		JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
+		jsExecutor.executeScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", element);  
+
+	}
+	
+	// XPath Conditions 
+	public static void chapter4()
+	{
+		driver.get("https://www.hyrtutorials.com/p/add-padding-to-containers.html");
+		
+		/*
+		// "and" Operator : In this all have correct attributes and values 
+		List<WebElement> andElements = driver.findElements(By.xpath("//input[@maxlength<=15 and @name='name' and @type='text']"));
+		for(WebElement element : andElements)
+		{
+			highlight(element);
+		}
+		*/
+		
+		// "or" Operator : In this any one have correct attribute and value
+		List<WebElement> orElements = driver.findElements(By.xpath("//input[@maxlength<=15 or @name='name1' or @type='textabc']"));
+		for(WebElement element : orElements)
+		{
+			highlight(element);
+		}
+		//input[not(@maxLength=10)]
+		// "or" Operator : In this any one have correct attribute and value
+		List<WebElement> orElements = driver.findElements(By.xpath("//input[@maxlength<=15 or @name='name1' or @type='textabc']"));
+		for(WebElement element : orElements)
+		{
+			highlight(element);
+		}		}
+	}
+
+}
